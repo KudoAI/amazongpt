@@ -3,7 +3,7 @@
 // @description            Adds the magic of AI to Amazon shopping
 // @author                 KudoAI
 // @namespace              https://kudoai.com
-// @version                2024.7.14.3
+// @version                2024.7.14.4
 // @license                MIT
 // @icon                   https://amazongpt.kudoai.com/assets/images/icons/amazongpt/black/icon48.png?v=1ac5561
 // @icon64                 https://amazongpt.kudoai.com/assets/images/icons/amazongpt/black/icon64.png?v=1ac5561
@@ -255,7 +255,7 @@
         xhr({
             method: 'GET', url: config.updateURL + '?t=' + Date.now(),
             headers: { 'Cache-Control': 'no-cache' },
-            onload: resp => { const updateAlertWidth = 409
+            onload: resp => { const updateAlertWidth = 488
 
                 // Compare versions
                 const latestVer = /@version +(.*)/.exec(resp.responseText)[1]
