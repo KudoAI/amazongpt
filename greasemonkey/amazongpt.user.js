@@ -3,7 +3,7 @@
 // @description            Adds the magic of AI to Amazon shopping
 // @author                 KudoAI
 // @namespace              https://kudoai.com
-// @version                2024.7.14
+// @version                2024.7.14.1
 // @license                MIT
 // @icon                   https://amazongpt.kudoai.com/assets/images/icons/amazongpt/black/icon48.png?v=1ac5561
 // @icon64                 https://amazongpt.kudoai.com/assets/images/icons/amazongpt/black/icon64.png?v=1ac5561
@@ -62,7 +62,7 @@
     const config = {
         appName: 'AmazonGPT', appSymbol: '🤖', keyPrefix: 'amazonGPT',
         appURL: 'https://amazongpt.kudoai.com', gitHubURL: 'https://github.com/KudoAI/amazongpt',
-        greasyForkURL: '#',
+        greasyForkURL: 'https://greasyfork.org/scripts/500663-amazongpt',
         minFontSize: 11, maxFontSize: 24, lineHeightRatio: 1.28,
         latestAssetCommitHash: '1ac5561' } // for cached messages.json
     config.updateURL = config.greasyForkURL.replace('https://', 'https://update.')
