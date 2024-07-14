@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "eslint": "^9.7.0"
+  },
+  "scripts": {
+    "lint": "eslint . --cache",
+    "lint:all": "eslint .",
+    "lint:fix": "eslint . --fix --cache",
+    "lint:fix-all": "eslint . --fix"
+  }
+}
