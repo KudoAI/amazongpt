@@ -3,7 +3,7 @@ name: Sync (/ to adamlui/chatgpt-apps/amazongpt/) && (/greasemonkey/ to adamlui/
 on:
   push:
     branches: [main]
-    paths: ["**"]
+    paths: ["**", "!.github/**"]
 
 jobs:
   build:
