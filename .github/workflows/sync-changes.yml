@@ -1,4 +1,4 @@
-name: Sync (/ to adamlui/chatgpt-apps/amazongpt/) && (/greasemonkey/ to adamlui/userscripts/chatgpt/amazongpt/)
+name: Sync (/ to adamlui/ai-apps/amazongpt/) && (/greasemonkey/ to adamlui/userscripts/chatgpt/amazongpt/)
 
 on:
   push:
@@ -25,12 +25,12 @@ jobs:
           path: KudoAI/amazongpt
           fetch-depth: 2
 
-      - name: Checkout adamlui/chatgpt-apps
+      - name: Checkout adamlui/ai-apps
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.REPO_SYNC_PAT }}
-          repository: adamlui/chatgpt-apps
-          path: adamlui/chatgpt-apps
+          repository: adamlui/ai-apps
+          path: adamlui/ai-apps
 
       - name: Checkout adamlui/userscripts
         uses: actions/checkout@v4
@@ -76,11 +76,11 @@ jobs:
           # Store sync src for commit msg in self-push step
           echo "sync_src=$sync_src" >> $GITHUB_OUTPUT
 
-      - name: Sync / to adamlui/chatgpt-apps/amazongpt/
+      - name: Sync / to adamlui/ai-apps/amazongpt/
         run: |
           rsync -avhr --delete --exclude={'.*','eslint*','package*json'} \
             ${{ github.workspace }}/KudoAI/amazongpt/ \
-            ${{ github.workspace }}/adamlui/chatgpt-apps/amazongpt/
+            ${{ github.workspace }}/adamlui/ai-apps/amazongpt/
 
       - name: Sync /greasemonkey/ to adamlui/userscripts/chatgpt/amazongpt/
         run: |
@@ -103,9 +103,9 @@ jobs:
           git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from \`${{ steps.sync_docs.outputs.sync_src }}\`]" || true
           git push
 
-      - name: Push changes to adamlui/chatgpt-apps
+      - name: Push changes to adamlui/ai-apps
         run: |
-          cd ${{ github.workspace }}/adamlui/chatgpt-apps
+          cd ${{ github.workspace }}/adamlui/ai-apps
           git add .
           git commit -n -m "$ESCAPED_MSG ↞ [auto-sync from \`KudoAI/amazongpt\`]" || true
           git push
