@@ -23,7 +23,7 @@
 // @compatible             mask
 // @match                  *://www.amazon.com/*
 // @match                  *://www.amazon.ae/*
-// @match                  *://www.amazon.be/*
+// @match                  *://www.amazon.com.be/*
 // @match                  *://www.amazon.ca/*
 // @match                  *://www.amazon.cn/*
 // @match                  *://www.amazon.co.jp/*
