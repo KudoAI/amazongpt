@@ -20,6 +20,7 @@ jobs:
       - name: Checkout KudoAI/amazongpt
         uses: actions/checkout@v5
         with:
+          token: ${{ secrets.REPO_SYNC_PAT }}
           path: KudoAI/amazongpt
           fetch-depth: 2
 
