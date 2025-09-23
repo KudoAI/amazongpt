@@ -22,6 +22,7 @@ jobs:
           fetch-depth: 0
 
       - name: Push changes to gitlab.com/kudoai/amazongpt
+        env:
+          GITLAB_SYNC_PAT: ${{ secrets.GITLAB_SYNC_PAT }}
         run: |
-          git push --force -o ci.skip \
-            https://oauth2:${{ secrets.GITLAB_SYNC_PAT }}@gitlab.com/kudoai/amazongpt.git main
+          git push --force -o ci.skip https://oauth2:$secrets.GITLAB_SYNC_PAT@gitlab.com/kudoai/amazongpt.git main
