@@ -14,7 +14,7 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - uses: JustinBeckwith/linkinator-action@7b6b0bc671f6264e1a8daa4488a5bd91ce61dcd4 # v2.4.2
+      - uses: JustinBeckwith/linkinator-action@931839f49ccc9f63af7d490949d89be9ddf7042b # v2.4.4
         with:
           paths: '**/*.md'
           statusCodes: '{ "408": "skip", "429": "skip", "504": "skip" }'
