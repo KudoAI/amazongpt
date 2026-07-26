@@ -3,7 +3,7 @@
 // @description            Add AI chat & product/category summaries to Amazon shopping, powered by the latest LLMs like GPT-4o!
 // @author                 KudoAI
 // @namespace              https://kudoai.com
-// @version                2026.7.26.2
+// @version                2026.7.26.3
 // @license                MIT
 // @icon                   https://cdn.jsdelivr.net/gh/KudoAI/amazongpt@8e8ed1c/assets/images/icons/app/black-gold-teal/icon48.png
 // @icon64                 https://cdn.jsdelivr.net/gh/KudoAI/amazongpt@8e8ed1c/assets/images/icons/app/black-gold-teal/icon64.png
@@ -1717,7 +1717,8 @@
                                 innerDiv.innerHTML = modals.settings.aboutContent[
                                     app.config.fgAnimationsDisabled ? 'short' : 'long']
                                 innerDiv.style.float = app.config.fgAnimationsDisabled ? 'right' : ''
-                                configStatusSpan.append(innerDiv) ; settingEntry.onclick = () => modals.open('about')
+                                configStatusSpan.append(innerDiv)
+                                settingEntry.onclick = () => modals.open('about')
                             },
                             preferredAPI: () => {
                                 configStatusSpan.textContent = app.config.preferredAPI || app.msgs.menuLabel_random
