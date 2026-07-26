@@ -3,7 +3,7 @@
 // @description            Add AI chat & product/category summaries to Amazon shopping, powered by the latest LLMs like GPT-4o!
 // @author                 KudoAI
 // @namespace              https://kudoai.com
-// @version                2026.7.26.1
+// @version                2026.7.26.2
 // @license                MIT
 // @icon                   https://cdn.jsdelivr.net/gh/KudoAI/amazongpt@8e8ed1c/assets/images/icons/app/black-gold-teal/icon48.png
 // @icon64                 https://cdn.jsdelivr.net/gh/KudoAI/amazongpt@8e8ed1c/assets/images/icons/app/black-gold-teal/icon64.png
@@ -154,9 +154,9 @@
         })),
         msgs: await new Promise(resolve => {
             const msgBaseURL = `${app.urls.resourceHost}/greasemonkey/_locales`,
-                  locale = `${ env.browser.language ? env.browser.language.replace('-', '_') : 'en' }`
-            let msgURL = `${msgBaseURL}/${locale}/messages.json`, msgFetchesTried = 0
-            function fetchMsgs() { env.xhr({ method: 'GET', url: msgURL, onload: handleMsgs })}
+                  locale = env.browser.language ? env.browser.language.replace('-', '_') : 'en'
+            let msgsURL = `${msgBaseURL}/${locale}/messages.json`, msgFetchesTried = 0
+            function fetchMsgs() { env.xhr({ method: 'GET', url: msgsURL, onload: handleMsgs })}
             function handleMsgs(resp) {
                 try { // to return localized messages.json
                     const msgs = JSON.parse(resp.responseText), flatMsgs = {}
@@ -166,8 +166,8 @@
                     resolve(flatMsgs)
                 } catch (err) { // if bad response
                     msgFetchesTried++ ; if (msgFetchesTried == 3) return resolve({}) // try original/region-stripped/EN
-                    msgURL = env.browser.language.includes('-') && msgFetchesTried == 1 ? // if regional lang on 1st try
-                        msgURL.replace(/(_locales\/[^_]+)_[^_]+(\/)/, '$1$2') // ...strip region before retrying
+                    msgsURL = env.browser.language.includes('-') && msgFetchesTried == 1 ? // if regional lang on 1st try
+                        msgsURL.replace(/(_locales\/[^_]+)_[^_]+(\/)/, '$1$2') // ...strip region before retrying
                             : `${msgBaseURL}/en/messages.json` // else use default English messages
                     fetchMsgs()
                 }
