@@ -3,7 +3,7 @@
 // @description            Add AI chat & product/category summaries to Amazon shopping, powered by the latest LLMs!
 // @author                 KudoAI
 // @namespace              https://kudoai.com
-// @version                2026.7.28
+// @version                2026.7.28.1
 // @license                MIT
 // @icon                   https://cdn.jsdelivr.net/gh/KudoAI/amazongpt@8e8ed1c/assets/images/icons/app/black-gold-teal/icon48.png
 // @icon64                 https://cdn.jsdelivr.net/gh/KudoAI/amazongpt@8e8ed1c/assets/images/icons/app/black-gold-teal/icon64.png
@@ -154,8 +154,8 @@
         })),
         msgs: await new Promise(resolve => {
             const msgBaseURL = `${app.urls.resourceHost}/greasemonkey/_locales`,
-                  locale = env.browser.language ? env.browser.language.replace('-', '_') : 'en'
-            let msgsURL = `${msgBaseURL}/${locale}/messages.json`, msgFetchesTried = 0
+                  localeDir = env.browser.language ? env.browser.language.replace('-', '_') : 'en'
+            let msgsURL = `${msgBaseURL}/${localeDir}/messages.json`, msgFetchesTried = 0
             function fetchMsgs() { env.xhr({ method: 'GET', url: msgsURL, onload: handleMsgs })}
             function handleMsgs(resp) {
                 try { // to return localized messages.json
