@@ -2,8 +2,8 @@
 // @name                   AmazonGPT 🤖
 // @description            Add AI chat & product/category summaries to Amazon shopping, powered by the latest LLMs!
 // @author                 KudoAI
-// @namespace              https://kudoai.com
-// @version                2026.8.3.1
+// @namespace              https://kudoai.org
+// @version                2026.8.3.2
 // @license                MIT
 // @icon                   https://cdn.jsdelivr.net/gh/KudoAI/amazongpt@8e8ed1c/assets/images/icons/app/black-gold-teal/icon48.png
 // @icon64                 https://cdn.jsdelivr.net/gh/KudoAI/amazongpt@8e8ed1c/assets/images/icons/app/black-gold-teal/icon64.png
@@ -68,7 +68,6 @@
 // @connect                cdn.jsdelivr.net
 // @connect                chatai.mixerbox.com
 // @connect                chatgpt.com
-// @connect                chats.kudoai.com
 // @connect                fanyi.sogou.com
 // @connect                raw.githubusercontent.com
 // @require                https://cdn.jsdelivr.net/npm/@kudoai/chatgpt.js@4.15.6/dist/chatgpt.min.js#sha256-zp2Wy06WHvPDCRWgIE/ZHNT0cLqAGIsgleJjfDEITjw=
@@ -113,7 +112,7 @@
 // @noframes
 // @downloadURL            https://raw.githubusercontent.com/KudoAI/amazongpt/main/greasemonkey/amazongpt.user.js
 // @updateURL              https://raw.githubusercontent.com/KudoAI/amazongpt/main/greasemonkey/amazongpt.user.js
-// @homepageURL            https://amazongpt.kudoai.com
+// @homepageURL            https://amazongpt.kudoai.org
 // @supportURL             https://github.com/KudoAI/amazongpt/issues
 // @contributionURL        https://github.com/sponsors/KudoAI
 // ==/UserScript==
