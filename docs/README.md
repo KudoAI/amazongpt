@@ -37,7 +37,7 @@
 
 <h3>🛒 Enhance Amazon shopping w/ AI chat & product/category summaries, powered by the latest LLMs 🤖</h3>
 
-<a href="https://raw.githubusercontent.com/KudoAI/amazongpt/main/greasemonkey/amazongpt.user.js"><img style="height: 45px" alt="[Install this script]" src="https://cdn.jsdelivr.net/gh/KudoAI/amazongpt@579eef3/assets/images/buttons/greasy-fork/install/this-script.svg"></a><a href="#-installation"><img style="height: 45px" alt="[How to install]" title="How to install" src="https://cdn.jsdelivr.net/gh/KudoAI/amazongpt@579eef3/assets/images/buttons/greasy-fork/help.svg"></a>
+<a href="https://scriptcat.org/scripts/code/7318/amazongpt.user.js"><img style="height: 45px" alt="[Install this script]" src="https://cdn.jsdelivr.net/gh/KudoAI/amazongpt@579eef3/assets/images/buttons/greasy-fork/install/this-script.svg"></a><a href="#-installation"><img style="height: 45px" alt="[How to install]" title="How to install" src="https://cdn.jsdelivr.net/gh/KudoAI/amazongpt@579eef3/assets/images/buttons/greasy-fork/help.svg"></a>
 <br>
 [Discuss](https://github.com/KudoAI/amazongpt/discussions) /
 [Get support](https://github.com/KudoAI/amazongpt/issues) /
@@ -80,7 +80,7 @@
     - **OrangeMonkey*** for [Chrome](https://chromewebstore.google.com/detail/orangemonkey/ekmeppjgajofkpiofbebgcbohbmfldaf)
     - [**Stay**](https://apps.apple.com/app/stay-for-safari/id1591620171) or [**Userscripts**](https://apps.apple.com/app/userscripts/id1463298887) for Safari
 
-2. Install [**AmazonGPT**](https://raw.githubusercontent.com/KudoAI/amazongpt/main/greasemonkey/amazongpt.user.js) userscript (will load in manager installed above)
+2. Install [**AmazonGPT**](https://scriptcat.org/scripts/code/7318/amazongpt.user.js) userscript (will load in manager installed above)
 
 3. Visit [**Amazon.com**](https://amazon.com), engage bot!
 
@@ -526,7 +526,7 @@
 
 <div align="center">
 
-<a href="https://raw.githubusercontent.com/KudoAI/amazongpt/main/greasemonkey/amazongpt.user.js"><img style="height: 45px" alt="[Install AmazonGPT]" src="https://cdn.jsdelivr.net/gh/KudoAI/amazongpt@579eef3/assets/images/buttons/greasy-fork/install/amazongpt.svg"></a><a href="#-installation"><img style="height: 45px" alt="[How to install]" title="How to install" src="https://cdn.jsdelivr.net/gh/KudoAI/amazongpt@579eef3/assets/images/buttons/greasy-fork/help.svg"></a>
+<a href="https://scriptcat.org/scripts/code/7318/amazongpt.user.js"><img style="height: 45px" alt="[Install AmazonGPT]" src="https://cdn.jsdelivr.net/gh/KudoAI/amazongpt@579eef3/assets/images/buttons/greasy-fork/install/amazongpt.svg"></a><a href="#-installation"><img style="height: 45px" alt="[How to install]" title="How to install" src="https://cdn.jsdelivr.net/gh/KudoAI/amazongpt@579eef3/assets/images/buttons/greasy-fork/help.svg"></a>
 <br>
 [Discuss](https://github.com/KudoAI/amazongpt/discussions) /
 [Get support](https://github.com/KudoAI/amazongpt/issues) /

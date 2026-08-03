@@ -110,8 +110,8 @@
 // @grant                  GM_xmlhttpRequest
 // @grant                  GM.xmlHttpRequest
 // @noframes
-// @downloadURL            https://raw.githubusercontent.com/KudoAI/amazongpt/main/greasemonkey/amazongpt.user.js
-// @updateURL              https://raw.githubusercontent.com/KudoAI/amazongpt/main/greasemonkey/amazongpt.user.js
+// @downloadURL            https://scriptcat.org/scripts/code/7318/amazongpt.user.js
+// @updateURL              https://scriptcat.org/scripts/code/7318/amazongpt.meta.js
 // @homepageURL            https://amazongpt.kudoai.org
 // @supportURL             https://github.com/KudoAI/amazongpt/issues
 // @contributionURL        https://github.com/sponsors/KudoAI
