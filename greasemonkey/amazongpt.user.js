@@ -3,7 +3,7 @@
 // @description            Add AI chat & product/category summaries to Amazon shopping, powered by the latest LLMs!
 // @author                 KudoAI
 // @namespace              https://kudoai.org
-// @version                2026.8.3.3
+// @version                2026.8.3.4
 // @license                MIT
 // @icon                   https://cdn.jsdelivr.net/gh/KudoAI/amazongpt@8e8ed1c/assets/images/icons/app/black-gold-teal/icon48.png
 // @icon64                 https://cdn.jsdelivr.net/gh/KudoAI/amazongpt@8e8ed1c/assets/images/icons/app/black-gold-teal/icon64.png
@@ -69,7 +69,7 @@
 // @connect                chatai.mixerbox.com
 // @connect                chatgpt.com
 // @connect                fanyi.sogou.com
-// @connect                raw.githubusercontent.com
+// @connect                scriptcat.org
 // @require                https://cdn.jsdelivr.net/npm/@kudoai/chatgpt.js@4.15.6/dist/chatgpt.min.js#sha256-zp2Wy06WHvPDCRWgIE/ZHNT0cLqAGIsgleJjfDEITjw=
 // @require                https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js#sha256-dppVXeVTurw1ozOPNE3XqhYmDJPOosfbKQcHyQSE58w=
 // @require                https://cdn.jsdelivr.net/npm/json5@2.2.3/dist/index.min.js#sha256-S7ltnVPzgKyAGBlBG4wQhorJqYTehj5WQCrADCKJufE=
@@ -138,7 +138,7 @@
     window.app = {
         version: GM_info.script.version, chatgptjsVer: /chatgpt\.js@([\d.]+)/.exec(GM_info.scriptMetaStr)[1],
         commitHashes: {
-            app: 'd97e854', // for cached <app|messages>.json
+            app: 'd9bf504', // for cached <app|messages>.json
             aiweb: 'cd6272e' // for cached ai-chat-apis.json5 + <code-languages|katex-delimiters|sogou-tts-lang-codes>.json
         },
         config: { anchored: true }
