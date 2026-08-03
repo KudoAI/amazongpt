@@ -3,7 +3,7 @@
 // @description            Add AI chat & product/category summaries to Amazon shopping, powered by the latest LLMs!
 // @author                 KudoAI
 // @namespace              https://kudoai.org
-// @version                2026.8.3.4
+// @version                2026.8.3.5
 // @license                MIT
 // @icon                   https://cdn.jsdelivr.net/gh/KudoAI/amazongpt@8e8ed1c/assets/images/icons/app/black-gold-teal/icon48.png
 // @icon64                 https://cdn.jsdelivr.net/gh/KudoAI/amazongpt@8e8ed1c/assets/images/icons/app/black-gold-teal/icon64.png
@@ -138,7 +138,7 @@
     window.app = {
         version: GM_info.script.version, chatgptjsVer: /chatgpt\.js@([\d.]+)/.exec(GM_info.scriptMetaStr)[1],
         commitHashes: {
-            app: 'd9bf504', // for cached <app|messages>.json
+            app: '33970ea', // for cached <app|messages>.json
             aiweb: 'cd6272e' // for cached ai-chat-apis.json5 + <code-languages|katex-delimiters|sogou-tts-lang-codes>.json
         },
         config: { anchored: true }
@@ -1343,7 +1343,8 @@
             let btns = [
                 function trustpilot(){},
                 function saashub(){},
-                function linkedin(){}
+                function linkedin(){},
+                function scriptcat(){}
             ]
             if (modals.stack[0] != 'about') btns.push(function github(){})
 
@@ -1371,6 +1372,7 @@
                 btn.onclick = () => modals.safeWinOpen(
                     btn.textContent == 'Linkedin' ? app.urls.review.linkedin
                   : btn.textContent == 'Saashub' ? app.urls.review.saashub
+                  : btn.textContent == 'Scriptcat' ? app.urls.review.scriptcat
                   : btn.textContent == 'Trustpilot' ? app.urls.review.trustpilot
                   : app.urls.discuss
                 )
