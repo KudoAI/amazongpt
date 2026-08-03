@@ -3,7 +3,7 @@
 // @description            Add AI chat & product/category summaries to Amazon shopping, powered by the latest LLMs!
 // @author                 KudoAI
 // @namespace              https://kudoai.org
-// @version                2026.8.3.2
+// @version                2026.8.3.3
 // @license                MIT
 // @icon                   https://cdn.jsdelivr.net/gh/KudoAI/amazongpt@8e8ed1c/assets/images/icons/app/black-gold-teal/icon48.png
 // @icon64                 https://cdn.jsdelivr.net/gh/KudoAI/amazongpt@8e8ed1c/assets/images/icons/app/black-gold-teal/icon64.png
@@ -138,8 +138,8 @@
     window.app = {
         version: GM_info.script.version, chatgptjsVer: /chatgpt\.js@([\d.]+)/.exec(GM_info.scriptMetaStr)[1],
         commitHashes: {
-            app: 'be17b5f', // for cached <app|messages>.json
-            aiweb: '9b38088' // for cached ai-chat-apis.json5 + <code-languages|katex-delimiters|sogou-tts-lang-codes>.json
+            app: 'd97e854', // for cached <app|messages>.json
+            aiweb: 'cd6272e' // for cached ai-chat-apis.json5 + <code-languages|katex-delimiters|sogou-tts-lang-codes>.json
         },
         config: { anchored: true }
     }
@@ -1340,7 +1340,11 @@
         feedback() {
 
             // Init buttons
-            let btns = [function saashub(){}, function linkedin(){}]
+            let btns = [
+                function trustpilot(){},
+                function saashub(){},
+                function linkedin(){}
+            ]
             if (modals.stack[0] != 'about') btns.push(function github(){})
 
             // Show modal
@@ -1367,6 +1371,7 @@
                 btn.onclick = () => modals.safeWinOpen(
                     btn.textContent == 'Linkedin' ? app.urls.review.linkedin
                   : btn.textContent == 'Saashub' ? app.urls.review.saashub
+                  : btn.textContent == 'Trustpilot' ? app.urls.review.trustpilot
                   : app.urls.discuss
                 )
             })
