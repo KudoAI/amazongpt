@@ -1,3 +1,6 @@
+> [!IMPORTANT]  
+> This project has migrated to **<https://codeberg.org/adamlui/amazongpt>**
+
 <a href="#top"></a>
 
 <!-- HEADER LOGO -->
