@@ -1,5 +1,9 @@
+***
+
 > [!IMPORTANT]  
-> This project has migrated to **<https://codeberg.org/adamlui/amazongpt>**
+> This project has migrated to **<https://codeberg.org/KudoAI/amazongpt>**
+
+***
 
 <a href="#top"></a>
 
